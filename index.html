@@ -16,7 +16,7 @@
 
 <body>
 
-    <header>
+    <header class="sticky-top">
 
         <!-- Navbar -->
         <nav class="navbar bg-dark navbar-expand-lg" data-bs-theme="dark">
@@ -192,7 +192,94 @@
                     </table>
                 </div>
             </div>
+
+            <!-- To-Do -->
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header fs-3 fw-normal py-3">
+                            Todo
+                        </div>
+                        <div class="card m-3">
+                            <div>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <input class="form-check-input" type="checkbox" id="todo-1">
+                                        <label class="form-check-label" for="firstCheckbox">Chiamare segreteria</label>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <input class="form-check-input" type="checkbox" id="todo-2">
+                                        <label class="form-check-label" for="secondCheckbox">Mandare avvisi prestiti scaduti</label>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <input class="form-check-input" type="checkbox" id="todo-3">
+                                        <label class="form-check-label" for="thirdCheckbox">Ordinare nuovi libri</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ -->
+            <div class="row mt-4">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header fs-3 fw-normal py-3">
+                            F.A.Q.
+                        </div>
+                        <!-- Accordion -->
+                        <div class="accordion accordion-flush m-4">
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq-1">
+                                        Come aggiungere un libro nuovo?
+                                    </button>
+                                </h2>
+                                <div id="faq-1" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        Clicca il bottone "Aggiungi Libro" - Abbastanza ovvio no?
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq-2">
+                                        Come posso accedere all'anagrafica utenti?
+                                    </button>
+                                </h2>
+                                <div id="faq-2" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        Non ancora disponibile
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq-3">
+                                        Posso usare questa dashboard da mobile?
+                                    </button>
+                                </h2>
+                                <div id="faq-3" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        L'ho programmata apposta!
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
+
+
 
     </main>
 
